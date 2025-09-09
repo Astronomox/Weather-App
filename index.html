@@ -9,7 +9,6 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            overflow: hidden;
             background: radial-gradient(circle, #ff5722, #9c27b0, #E91E63, #4CAF50);
             background-size: 400% 400%;
             animation: color-show 10s ease infinite; /* Speed adjusted to 10 seconds */
@@ -39,10 +38,10 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
+<body class="flex flex-col min-h-screen items-center p-4">
 
     <!-- Main transparent card container -->
-    <div class="w-full max-w-sm bg-transparent rounded-2xl shadow-xl p-6 md:p-8 space-y-6">
+    <div class="w-full max-w-sm bg-transparent rounded-2xl shadow-xl p-6 md:p-8 space-y-6 pb-24">
         <h1 class="text-3xl font-bold text-center text-gray-900">
             <i class="fas fa-cloud-sun text-blue-500 mr-2"></i>Weather App
         </h1>
@@ -224,8 +223,7 @@
         }
     </script>
 </body>
-        <footer class="w-full text-center p-4 bg-black text-white">
-        ASTRONOMOX™
-    </footer>
+<footer class="fixed bottom-0 inset-x-0 w-full text-center p-4 bg-black text-white z-50">
+    ASTRONOMOX™
+</footer>
 </html>
-
